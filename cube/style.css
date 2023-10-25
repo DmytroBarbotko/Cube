@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --veryDarkBlueMain:hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: #fff;
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--veryDarkBlueMain);
+    font-family: 'Outfit', sans-serif;
+}
+
+.main_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--veryDarkBlueCard);
+    border-radius: 15px;
+    width: 360px;
+    height: 600px;
+}
+
+.main_image {
+    border-radius: 10px;
+}
+
+.first_axil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eq_article {
+    color: var(--white);
+}
+
+.article_descr {
+    color: var(--softBlue);
+}
+
+.second_axil {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-weight: 600;
+}
+
+.eth_descr {
+    color: var(--cyan);
+}
+
+.clock-descr {
+    color: var(--softBlue);
+}
+
+.third_axil {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.ethereum {
+    padding-right: 122px;
+}
+
+.line {
+    width: 300px;
+    background-color: var(--veryDarkBlueLine);
+}
+
+.avatar {
+    padding-right: 75px;
+    color: var(--softBlue);
+}
+
+.image_avatar {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.name {
+    color: var(--white);
+}
+
+@media (max-width: 375px) {
+    
+    body {
+        transform: scale(0.7);
+    }
+
+    .main_flex {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_image {
+        width: 275px;
+    }
+
+    .line {
+        width: 200px;
+    }
+}
